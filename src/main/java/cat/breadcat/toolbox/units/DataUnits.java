@@ -6,6 +6,7 @@ public final class DataUnits
 
 
     public static final int BYTE = 1;
+    public static final int BYTE_BITS = 8;
 
     public static final int KB = 1000;
     public static final int MB = KB * 1000;
