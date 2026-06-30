@@ -2,6 +2,9 @@ package cat.breadcat.toolbox.utils;
 
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import java.util.stream.Stream;
 
 public final class FileUtil
@@ -80,6 +83,30 @@ public final class FileUtil
     public static Stream<Path> directories(Path path) throws IOException
     {
         return walk(path).filter(Files::isDirectory);
+    }
+
+    public static List<Path> collectFiles(Collection<Path> paths) throws IOException
+    {
+        List<Path> result = new ArrayList<>();
+
+        for (Path path : paths)
+        {
+            if (Files.isRegularFile(path))
+            {
+                result.add(path);
+            }
+            else if (Files.isDirectory(path))
+            {
+                try (Stream<Path> pathStream = Files.walk(path))
+                {
+                    pathStream
+                            .filter(Files::isRegularFile)
+                            .forEach(result::add);
+                }
+            }
+        }
+
+        return result;
     }
 
 
