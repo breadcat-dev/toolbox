@@ -135,21 +135,13 @@ String extension = "java";
 String text = StringUtil.join(", ", "breadcat", 43, true);
 System.out.println(text);
 ```
-
-( Terminal )
-```text
-breadcat, 43, true
-```
+> breadcat, 43, true
 
 ### BinaryDataUnits
 ```java
 System.out.println("There are " + BinaryDataUnits.MiB + " bytes in a MiB.");
 ```
-
-( Terminal )
-```text
-There are 1048576 bytes in a MiB.
-```
+> There are 1048576 bytes in a MiB.
 
 ## Dependencies:
 
