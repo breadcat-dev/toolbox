@@ -1,4 +1,4 @@
-package cat.breadcat.toolbox.utils;
+package cat.breadcat.toolbox.util;
 
 public final class AnsiUtil
 {

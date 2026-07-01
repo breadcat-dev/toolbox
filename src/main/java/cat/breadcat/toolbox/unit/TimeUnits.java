@@ -1,4 +1,4 @@
-package cat.breadcat.toolbox.units;
+package cat.breadcat.toolbox.unit;
 
 public final class TimeUnits
 {
