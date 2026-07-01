@@ -2,6 +2,9 @@ package cat.breadcat.toolbox.util;
 
 import java.nio.file.Path;
 
+/**
+ * Path parsing utilities.
+ */
 public final class PathUtil
 {
     private PathUtil() {}

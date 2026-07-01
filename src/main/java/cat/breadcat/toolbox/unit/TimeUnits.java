@@ -1,5 +1,8 @@
 package cat.breadcat.toolbox.unit;
 
+/**
+ * Time constants up to a day.
+ */
 public final class TimeUnits
 {
     private TimeUnits() {}

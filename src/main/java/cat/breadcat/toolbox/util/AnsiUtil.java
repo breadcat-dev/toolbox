@@ -1,5 +1,10 @@
 package cat.breadcat.toolbox.util;
 
+/**
+ * ANSI color constants
+ *
+ * <p>Used for logging.</p>
+ */
 public final class AnsiUtil
 {
     private AnsiUtil() {}

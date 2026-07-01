@@ -1,5 +1,10 @@
 package cat.breadcat.toolbox.util;
 
+/**
+ * Bit operation methods
+ *
+ * <p>Used for low-level binary manipulation.</p>
+ */
 public final class BinaryUtil
 {
     private BinaryUtil() {}

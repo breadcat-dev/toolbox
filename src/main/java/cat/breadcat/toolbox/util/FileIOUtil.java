@@ -1,15 +1,23 @@
 package cat.breadcat.toolbox.util;
 
 import java.io.IOException;
+import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.nio.file.attribute.FileAttribute;
 
+/**
+ * File and directory I/O operations.
+ */
 public final class FileIOUtil
 {
     private FileIOUtil() {}
 
 
+    /**
+     * Creates missing parent directories for the given path.
+     */
     public static void createDirectories(Path path) throws IOException
     {
         Path parent = path.getParent();

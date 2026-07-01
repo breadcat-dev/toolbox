@@ -1,5 +1,10 @@
 package cat.breadcat.toolbox.unit;
 
+/**
+ * Binary data size constants using base-2 (1024) units.
+ *
+ * <p>Used for memory and storage size calculations</p>
+ */
 public final class BinaryDataUnits
 {
     private BinaryDataUnits() {}

@@ -1,5 +1,10 @@
 package cat.breadcat.toolbox.unit;
 
+/**
+ * Decimal data size constants using base-10 (1000) units.
+ *
+ * <p>Used for memory sizes and binary file calculations.</p>
+ */
 public final class DecimalDataUnits
 {
     private DecimalDataUnits() {}

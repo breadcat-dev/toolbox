@@ -2,6 +2,11 @@ package cat.breadcat.toolbox.util;
 
 import cat.breadcat.toolbox.exception.NullArgumentException;
 
+/**
+ * String utility functions.
+ *
+ * <p>Includes safe joining and basic checks.</p>
+ */
 public final class StringUtil
 {
     private StringUtil() {}

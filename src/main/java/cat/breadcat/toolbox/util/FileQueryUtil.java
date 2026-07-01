@@ -5,6 +5,11 @@ import java.nio.file.*;
 import java.util.*;
 import java.util.stream.Stream;
 
+/**
+ * File system query utilities.
+ *
+ * <p>Provides directory traversal and file resolution helpers.</p>
+ */
 public final class FileQueryUtil
 {
     private FileQueryUtil() {}
@@ -30,6 +35,9 @@ public final class FileQueryUtil
         }
     }
 
+    /**
+     * Returns all files under a directory recursively.
+     */
     public static List<Path> files(Path path) throws IOException
     {
         try(Stream<Path> stream = walkStream(path))
@@ -38,6 +46,9 @@ public final class FileQueryUtil
         }
     }
 
+    /**
+     * Returns all directories under a directory recursively.
+     */
     public static List<Path> directories(Path path) throws IOException
     {
         try(Stream<Path> stream = walkStream(path))
@@ -46,6 +57,11 @@ public final class FileQueryUtil
         }
     }
 
+    /**
+     * Resolves a mixed collection of files and directories into a unique file list.
+     *
+     * <p>Directories are expanded recursively.</p>
+     */
     public static List<Path> resolveFiles(Collection<Path> paths) throws IOException
     {
         Set<Path> result = new LinkedHashSet<>();
