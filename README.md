@@ -20,8 +20,6 @@ Part of the TANK Series.
 - Data and time unit constants
 - Lightweight with no external dependencies
 
----
-
 ## Design Goals
 
 - Clean API
