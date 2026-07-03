@@ -20,12 +20,15 @@ Part of the TANK Series.
 - Data and time unit constants
 - Lightweight with no external dependencies
 
+---
+
 ## Design Goals
 
 - Clean API
 - Minimal
 - Lightweight
 
+---
 
 ## Installation
 
@@ -58,6 +61,8 @@ implementation "cat.breadcat:toolbox:<version>"
 ```gradle
 implementation("cat.breadcat:toolbox:<version>")
 ```
+
+---
 
 ## Examples
 
@@ -142,6 +147,8 @@ System.out.println(text);
 System.out.println("There are " + BinaryDataUnits.MiB + " bytes in a MiB.");
 ```
 > There are 1048576 bytes in a MiB.
+
+---
 
 ## Dependencies:
 
