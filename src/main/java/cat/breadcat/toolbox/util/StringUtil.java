@@ -49,4 +49,37 @@ public final class StringUtil
 
         return builder.toString();
     }
+
+    public static String join(String delimiter, String[] args)
+    {
+        int estimatedSize = 0;
+
+        for(String arg : args)
+        {
+            if(arg == null)
+                throw new NullArgumentException("Argument cannot be null");
+
+            estimatedSize += arg.length();
+        }
+
+        estimatedSize += Math.max(0, args.length - 1) * delimiter.length();
+
+
+        StringBuilder builder = new StringBuilder(estimatedSize);
+
+        boolean first = true;
+
+        for (String arg : args)
+        {
+            if (!first)
+                builder.append(delimiter);
+            else
+                first = false;
+
+            builder.append(arg);
+        }
+
+
+        return builder.toString();
+    }
 }
