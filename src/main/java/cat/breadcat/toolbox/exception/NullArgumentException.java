@@ -2,13 +2,12 @@ package cat.breadcat.toolbox.exception;
 
 public class NullArgumentException extends IllegalArgumentException
 {
-    public NullArgumentException(String message)
+    public NullArgumentException(String argument)
     {
-        super(message);
+        super("Argument cannot be null: " + argument);
     }
-
-    public NullArgumentException(String message, Throwable throwable)
+    public NullArgumentException(String argument, Throwable cause)
     {
-        super(message, throwable);
+        super("Argument cannot be null: " + argument, cause);
     }
 }

@@ -1,25 +1,17 @@
 package cat.breadcat.toolbox.util;
 
-/**
- * Bit operation methods
- *
- * <p>Used for low-level binary manipulation.</p>
- */
-public final class BinaryUtil
+public final class BinaryUtils
 {
-    private BinaryUtil() {}
-
+    private BinaryUtils() {}
 
     public static long setBit(long bits, int bit)
     {
         return bits | (1L << bit);
     }
-
     public static long clearBit(long bits, int bit)
     {
         return bits & ~(1L << bit);
     }
-
     public static boolean getBit(long bits, int bit)
     {
         return (bits & (1L << bit)) != 0;

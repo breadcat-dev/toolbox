@@ -2,14 +2,14 @@ package cat.breadcat.toolbox.util;
 
 import java.nio.file.Path;
 
-/**
- * Path parsing utilities.
- */
-public final class PathUtil
+public final class PathUtils
 {
-    private PathUtil() {}
+    private PathUtils() {}
 
-
+    public static String filename(Path path)
+    {
+        return path.getFileName().toString();
+    }
     public static String basename(Path path)
     {
         String filename = filename(path);
@@ -20,7 +20,6 @@ public final class PathUtil
         else
             return filename.substring(0, index);
     }
-
     public static String extension(Path path)
     {
         String filename = filename(path);
@@ -30,10 +29,5 @@ public final class PathUtil
             return "";
         else
             return filename.substring(index + 1);
-    }
-
-    public static String filename(Path path)
-    {
-        return path.getFileName().toString();
     }
 }

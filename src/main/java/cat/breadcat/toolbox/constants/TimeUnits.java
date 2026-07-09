@@ -1,12 +1,8 @@
-package cat.breadcat.toolbox.unit;
+package cat.breadcat.toolbox.constants;
 
-/**
- * Time constants up to a day.
- */
 public final class TimeUnits
 {
     private TimeUnits() {}
-
 
     public static final int SECOND = 1;
     public static final int MINUTE = SECOND * 60;

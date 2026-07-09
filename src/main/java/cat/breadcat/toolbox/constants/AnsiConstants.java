@@ -1,14 +1,8 @@
-package cat.breadcat.toolbox.util;
+package cat.breadcat.toolbox.constants;
 
-/**
- * ANSI color constants
- *
- * <p>Used for logging.</p>
- */
-public final class AnsiUtil
+public final class AnsiConstants
 {
-    private AnsiUtil() {}
-
+    private AnsiConstants() {}
 
     public static final String RESET = "\u001B[0m";
 

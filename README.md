@@ -16,6 +16,7 @@ Part of the TANK Series.
 - File utilities (copy, move, traversal, path helpers) 
 - Binary utilities (bit manipulation)
 - String utilities
+- Math utilities
 - ANSI color constants
 - Data and time unit constants
 - Lightweight with no external dependencies
@@ -64,9 +65,9 @@ implementation("cat.breadcat:toolbox:<version>")
 
 ## Examples
 
-### AnsiUtil
+### AnsiConstants
 ```java
-System.out.println(AnsiUtil.RED + "This text is red." + AnsiUtil.RESET);
+System.out.println(AnsiConstants.RED + "This text is red." + AnsiConstants.RESET);
 ```
 
 ### BinaryUtil

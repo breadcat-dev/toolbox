@@ -2,14 +2,9 @@ package cat.breadcat.toolbox.util;
 
 import cat.breadcat.toolbox.exception.NullArgumentException;
 
-/**
- * String utility functions.
- *
- * <p>Includes safe joining and basic checks.</p>
- */
-public final class StringUtil
+public final class StringUtils
 {
-    private StringUtil() {}
+    private StringUtils() {}
 
 
     public static boolean isEmpty(String text)
@@ -20,23 +15,20 @@ public final class StringUtil
     public static String join(String delimiter, Object... args)
     {
         int estimatedSize = 0;
-
-        for(Object arg : args)
+        for(int i = 0; i < args.length; i++)
         {
-            if(arg == null)
-                throw new NullArgumentException("Argument cannot be null");
+            if(args[i] == null)
+                throw new NullArgumentException("args[" + i + "]");
 
-            estimatedSize += arg.toString().length();
+            estimatedSize += args[i].toString().length();
         }
 
         estimatedSize += Math.max(0, args.length - 1) * delimiter.length();
 
 
         StringBuilder builder = new StringBuilder(estimatedSize);
-
         boolean first = true;
-
-        for (Object arg : args)
+        for(Object arg : args)
         {
             if (!first)
                 builder.append(delimiter);
@@ -45,7 +37,6 @@ public final class StringUtil
 
             builder.append(arg);
         }
-
 
         return builder.toString();
     }

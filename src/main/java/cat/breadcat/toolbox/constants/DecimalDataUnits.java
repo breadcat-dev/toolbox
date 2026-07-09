@@ -1,14 +1,8 @@
-package cat.breadcat.toolbox.unit;
+package cat.breadcat.toolbox.constants;
 
-/**
- * Decimal data size constants using base-10 (1000) units.
- *
- * <p>Used for memory sizes and binary file calculations.</p>
- */
 public final class DecimalDataUnits
 {
     private DecimalDataUnits() {}
-
 
     public static final long KB = 1000;
     public static final long MB = KB * 1000;
