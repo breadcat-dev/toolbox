@@ -1,6 +1,6 @@
 package cat.breadcat.toolbox.util;
 
-import cat.breadcat.toolbox.constants.MathConstants;
+import cat.breadcat.toolbox.constant.MathConstants;
 import cat.breadcat.toolbox.exception.InvalidRangeException;
 
 public final class MathUtils

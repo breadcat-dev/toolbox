@@ -1,4 +1,4 @@
-package cat.breadcat.toolbox.constants;
+package cat.breadcat.toolbox.constant;
 
 public final class DecimalDataUnits
 {
