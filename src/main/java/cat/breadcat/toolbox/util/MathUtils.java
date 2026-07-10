@@ -134,11 +134,11 @@ public final class MathUtils
 
     public static boolean approximatelyZero(float num)
     {
-        return approximatelyEqual(num, 0.0, MathConstants.EPSILON);
+        return approximatelyEqual(num, 0.0, MathConstants.STRICT_EPSILON);
     }
     public static boolean approximatelyZero(double num)
     {
-        return approximatelyEqual(num, 0.0, MathConstants.EPSILON_F);
+        return approximatelyEqual(num, 0.0, MathConstants.STRICT_EPSILON_F);
     }
 
 
